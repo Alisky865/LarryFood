@@ -1,0 +1,1157 @@
+
+*
+ {margin:0px;
+  padding:0px;
+ }
+
+ 
+
+ #header
+    {z-index:15;
+    display:flex;
+    flex-grow:1;flex-wrap:wrap;
+    flex-direction:row; align-content:center; justify-content:center;
+    backdrop-filter:blur(5px);
+    border-bottom:2px solid orangered;
+    border-radius:2px ;
+    box-shadow:0px 0px 7px 0px rgba(0, 0, 0, 0.7);
+    height:max-content;
+    position:fixed; top:0px; left:0px; right:0px;
+    margin-bottom:0px; margin-top:0px;
+    padding:5px 5px;
+    transition:all 0.7s ease-in-out;}
+
+     #header.scrolled 
+     {background-color:rgb(31, 28, 28);
+     transition:all 0.7s ease-in-out;}
+
+    #nav-box1
+     {flex:1;
+     display:flex;
+     flex-direction:row; align-content:center; justify-content:center;
+     height:max-content ; 
+     padding:8px 10px 6px 10px; margin-right:5px; margin-bottom:2px;
+     border:px solid rgb(90, 90, 86);}
+
+     #side-bar-button
+     {z-index:2;
+      display:none;
+      background-color:transparent;
+      height:45px; width:45px;
+      border:0px solid gray;
+      border-radius:5px;
+      padding:5px 5px;
+      margin-right:40px; 
+      position:relative;top:5px;
+      transition:2s;
+      /*box-shadow:0px 3px 10px rgb(7, 4, 4) inset ;*/
+     }
+       #side-bar-button:hover
+       {cursor:pointer;
+       background-color:gray; 
+       border-bottom:3px solid orangered;
+       transform:scaleY(60%);
+       box-shadow:0px 3px 7px rgb(7, 4, 4) inset;
+       }
+
+       /* #side-bar-button:active
+       {transform:rotateX('90')}*/
+
+       #side-bar-icon
+       {font-size:25px; color:orange;}
+
+     
+     #brand-pix
+     {height:55px; width:55px;
+     background:none;margin-right:20px;
+     transition-duration:1s;}
+
+       #brand-pix:hover
+       {cursor:pointer;
+        transform:scale(135%);
+        transition-duration:1s;
+       }
+
+
+     #brand-name
+     {color:orange;
+     font-size:20px;
+     font-weight:bolder;
+     font-family: 'GUNECTRIAL-Regular','Bonfire Free', 'Bregoria Signature','GUNECTRIAL-Regular','Khalifa';
+      text-wrap:nowrap; position:relative; top:13px;}
+
+     #sidebar-cart
+     {display:none;
+     flex-direction:row; align-content:center; justify-content:center;
+     height:max-content; margin-right:5px;}
+    
+       #sidebar-cart-button
+       {
+       flex:2;
+       background-color:transparent;
+       height:45px; width:45px;
+       padding:5px 5px;
+       margin-left:10px; border:none;
+       position:relative;top:5px;
+       transition:0.7s;}
+
+       #sidebar-cart-icon
+       {font-size:35px; color:orange;}
+
+       #sidebar-cart-button:hover
+       {cursor:pointer;
+       transform:scale(125%);
+       }
+
+       #sidebar-item-number-box
+       {font-weight:normal; font-size:13px;text-align:center;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color:orangered; background:rgb(68, 66, 66);
+       height:15px;
+       border-radius:100%;
+       padding:5px 5px;
+       position:relative; bottom:0px; right:20px;}
+        
+
+
+
+
+
+
+
+    #nav-box2
+     {flex:2;
+     display:flex;
+     flex-direction:row; align-content:center; justify-content:center;
+     padding:5px 2px; margin-right:2px; margin-bottom:5px;
+     order:2px solid rgb(90, 90, 86);
+     height:max-content;
+     position:relative; top:20px;}
+
+     
+     #navbar-ul
+       { flex:1;
+       display:flex;
+       flex-direction:row; align-content:center; justify-content:center;
+       order:0px solid gold;
+       height:max-content;
+       list-style: none;
+       padding:3px 3px;}
+
+        .navbar-a
+        {display:inline-block;
+        text-decoration:none;
+        font-weight:bolder; font-size:15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:white;
+        word-spacing:4px;
+        text-wrap:nowrap;
+        /*margin-right:0px;*/
+        position:relative; top:0px;
+        transition:all 0.7s ease-in-out;}
+
+         /*.navbar-a.scrolled3
+         {color:red;
+          transition:all 0.7s ease-in-out;}*/
+
+         .navbar-a:hover,
+         #navbar-icons:hover
+         {cursor:pointer;
+         color:orangered;
+         transition:all 0.7s ease-in-out;
+         transform:translateY(10px);}
+  
+         #navbar-icons
+           {font-size:13px; color:orange;}
+
+
+
+       .navbar-a:before
+        {content: '';
+         position:absolute;
+         background:white;
+         width:0;
+         height:3px;
+         bottom:-5px; left:0px;
+         transition:All 0.7s ease-in-out; }
+  
+         .navbar-a:hover:before
+         {width:100%;
+          transition:All 0.7s ease-in-out; }
+
+
+
+
+
+    #nav-box3
+     {flex:1;
+     display:flex;
+     flex-direction:row; align-content:center; justify-content:center;
+     padding:5px 5px;margin-right:5px;
+     order:2px solid rgb(90, 90, 86);
+     height:max-content;
+     position:relative; top:12px;}
+
+     
+     #navbar-cart
+       {
+       display:flex;
+       background-color:transparent;
+       flex-direction:row; align-content:center; justify-content:center;
+       border:0px solid gold;
+       height:max-content; width:55px;
+       padding:3px 3px;
+       position:relative; top:0px; margin-right:3px;}
+
+
+       #cart-button
+        {flex:2;
+        background-color:transparent;
+        height:max-content; width:45px;
+        border:2px solid gray;
+        padding:5px 5px;
+        position:relative; bottom:0px;
+        transition:all 0.7s ease-in-out;}
+
+         #cart-button:hover
+         {cursor:pointer;
+         transition:all 0.7s ease-in-out;
+         transform:scale(135%);}
+
+       
+         #cart-icon
+         {font-size:35px; color:orange;}
+
+         #item-number-box
+         {font-weight:normal; font-size:13px;text-align:center;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color:orangered; background:rgb(68, 66, 66);
+         height:15px; width:25px;
+         border-radius:100%; justify-content:center;
+         padding:5px 5px;
+         position:relative; bottom:7px; right:20px;
+         }
+
+
+
+
+     #navbar-input-box
+       {flex:3;
+       display:flex;
+       flex-direction:row; align-content:center; justify-content:center;
+       border:0px solid gold;
+       height:max-content;
+       padding:4px 4px;
+       position:relative; top:0px; margin-right:3px;}
+
+        #search-input
+        {height:23px;width:145px;
+        flex:5;
+        background-color:white;
+        border:2px solid gray;
+        border-top-left-radius:15px; border-bottom-left-radius:15px;
+        font-size:13px;
+        font-family:'Arial Narrow', Arial, sans-serif;
+        padding:3px 3px;}
+
+
+
+        #search-button
+        {background-color:white;
+        height:max-content;
+        border:2px solid gray;
+        border-top-right-radius:15px; border-bottom-right-radius:15px;
+        padding:7px 7px; 
+        position:relative; margin-left:-3px;
+        transition:0.5s;}
+
+         #search-icon
+         {font-size:15px; color:orange;}
+
+         #search-button:hover
+         {cursor:pointer;
+         background-color:gray;
+         transition-duration:1s;}
+
+
+
+       
+     #navbar-order-box
+       {flex:1;
+       display:flex; 
+       flex-direction:row; align-content:center; justify-content:center;
+       border:0px solid gold;
+       height:max-content;
+       padding:5px 5px;
+       position:relative; top:0px; margin-right:3px;}
+
+       #order-button
+        {background-color:orangered;
+        font-weight:bolder; font-size:13px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:white;
+        height:30px; width:90px;
+        /*max-height:30px; max-width:100px;*/
+        border:0px solid gray;
+        border-radius:15px;
+        padding:5px 5px;text-wrap:nowrap;
+        transition:1s;}
+
+       #order-button:hover
+        {cursor:pointer;
+        background-color:gray;
+        transition-duration:1s;
+        transform:translateY(-10px);
+        box-shadow:0px 3px 7px rgb(7, 4, 4) inset;}
+
+       #order-button:active
+        {cursor:pointer;
+        background-color:red;
+        transition-duration:0.1s;}
+
+
+
+
+ /******side-bar-container******/
+
+ #side-bar-container
+   {z-index:25;
+    display:none;
+    /*background-color:rgb(22, 21, 21);*/
+    flex-wrap:wrap;
+    flex-direction:column; align-content:center; justify-content:center;
+    backdrop-filter:blur(8px);
+    border:0px solid gold;
+    border-bottom:2px solid orangered;
+    border-right:2px solid orangered;
+    border-bottom-right-radius:10px;
+    /*border-right:2px solid gold;*/
+    height:max-content;
+    color:white;
+    position:fixed; top:0px; left:0px;
+    padding:85px 10px 15px 10px;
+    transition:all 0.7s ease-in-out;
+    
+    /*transform:scale(0.5);*/
+    }
+
+    #side-bar-container.scrolled2
+     {background-color:rgb(31, 28, 28);
+     transition:all 0.7s ease-in-out;}
+
+
+     #side-bar-container.show
+     {display:flex;
+      animation:fadeAndScale 0.5s forwards;}
+
+     @keyframes fadeAndScale
+     {0%{opacity:0; transform: scale(0.5);}
+      100%{opacity:1; transform: scale(1);}}
+
+
+     #close-container
+      {display:flex;
+       align-content:center; justify-content:center;
+       text-align:center;
+       padding:7px 7px;
+       height:max-content; width:max-content;
+       background-color:transparent;
+       margin-bottom:15px;float:right;
+       position:absolute; top:0px; right:5px;
+       }
+
+          #close-btn
+          {background-color:Transparent; font-size:25px;
+          font-family:'Arial Narrow', Arial, sans-serif;
+          color:white;
+          height:55px; border:none;
+          padding:5px 5px;
+          transition-duration:0.7s;}
+
+          #close-btn:hover
+          {cursor:pointer;
+          transition-duration:0.7s;
+          transform:scale(125%);}
+
+          #close-btn:active
+          {cursor:pointer;
+          color:red;
+          transition-duration:0.7s;}
+
+
+          #side-bar-container.hide
+          {animation:fadeAndScaleOut 0.5s forwards;}
+      
+          @keyframes fadeAndScaleOut
+           {0%{opacity:1; transform: scale(1);}
+            100%{opacity:0; transform: scale(0.5);}
+          }
+
+
+
+
+     #sidebar-ul
+     { flex:1;
+     display:flex;
+     flex-direction:column; align-content:center; justify-content:center;
+     height:max-content;
+     list-style: none;
+     padding:5px 5px;}
+
+     #sidebar-a
+     {display:block;
+     text-decoration:none;
+     font-weight:bolder; font-size:13px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color:white;
+     text-wrap:nowrap; margin:0px 0px 20px 15px;
+     transition-duration:1s;}
+
+     #sidebar-a:hover,
+     #sidebar-icons:hover,
+     #sidebar-icons2:hover,
+     #sidebar-icons3:hover
+     {cursor:pointer;
+     color:orangered;
+     transition-duration:1s;
+     transform:scale(125%);
+     }
+
+     #sidebar-icons
+     {font-size:15px; color:orange;
+      background-color:transparent;
+      border:2px solid gray; padding:3px 3px;
+      margin-right:15px;}
+
+     #sidebar-icons2
+     {font-size:16px; color:orange;
+     background-color:transparent;
+     border:2px solid gray; padding:3px 3px;
+     margin-right:15px;}
+
+     
+     #sidebar-icons3
+     {font-size:18px; color:orange;
+     background-color:transparent;
+     border:2px solid gray; padding:3px 3px;
+     margin-right:15px;}
+
+
+
+     #sidebar-search-box
+     {display:flex; 
+     flex-direction:row; align-content:center;justify-content:center;
+     padding:0px 5px;
+     margin-bottom:15px; margin-left:15px}
+
+       #sidebar-search-input
+       {flex:2;
+       height:15px;width:125px;
+       background-color:white;
+       border:2px solid gray;
+       border-top-left-radius:15px; border-bottom-left-radius:15px;
+       font-size:12px;
+       font-family:'Arial Narrow', Arial, sans-serif;
+       padding:3px 3px;}
+
+
+
+       #sidebar-search-button
+       {
+       background-color:white;
+       height:max-content;
+       border:2px solid gray;
+       border-top-right-radius:15px; border-bottom-right-radius:15px;
+       padding:5px 5px; 
+       position:relative; margin-left:-3px;
+       transition:0.5s;}
+
+         #sidebar-search-icon
+         {font-size:10px; color:orange;}
+
+         #sidebar-search-button:hover
+          {cursor:pointer;
+          background-color:gray;
+          transition-duration:1s;}
+
+
+       #sidebar-order-button
+       {background-color:orangered;
+       font-weight:bolder; font-size:10px;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color:white;
+       height:25px; width:70px;
+       border:0px solid gray;
+       border-radius:15px;
+       padding:5px 5px;text-wrap:nowrap; margin-left:21px;
+       transition-duration:1s;}
+
+       #sidebar-order-button:hover
+       {cursor:pointer;
+       background-color:gray;
+       transition-duration:1s;
+       transform:scale(125%);
+       box-shadow:0px 3px 7px rgb(7, 4, 4) inset;}
+
+       #sidebar-order-button:active
+       {cursor:pointer;
+       background-color:red;
+       transition-duration:0.1s;}
+
+
+
+
+
+
+
+
+
+
+
+
+ #mid-box
+    {display:flex;
+    flex-direction:column; align-content:center; justify-content:center;
+    flex-wrap:wrap; flex-shrink:0;flex-grow:0;
+    background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg.png");
+    background-position:center; background-repeat:no-repeat;background-size:cover;
+    height:100%; 
+    position:relative; margin-bottom:20px; margin-left:-6px; margin-right:-6px;
+    padding:75px 10px 10px 10px;
+    transition:all 1s ease-in-out;}
+
+    #mid-box:before
+    {content:'';
+    position:absolute;top:0px;
+    margin-bottom:20px; margin-left:-6px; margin-right:-6px;
+    background:rgba(0, 0, 0, 0.6);
+    height:100%; width:100%;
+    }
+
+
+   /* @keyframes fadeAndScale2
+    {0%{opacity:0; transform: scale(0.5);}
+     100%{opacity:1; transform: scale(1);}}*/
+
+    #mid-box.changed1
+    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg01.png");
+    transition:all 0.7s ease-in-out;
+   /* animation:fadeAndScale2 1s forwards;*/}
+
+    #mid-box.changed2
+    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg02.png");
+    transition:all 0.7s ease-in-out;
+    /*animation:fadeAndScale2 1s forwards;*/}
+
+    #mid-box.changed3
+    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg03.png");
+    transition:all 0.7s ease-in-out;
+    /*animation:fadeAndScale2 1s forwards;*/}
+
+
+   #welcome-box1
+     {
+      display:flex;
+      flex-direction:column; align-content:center; justify-content:center;
+      flex-wrap:wrap;
+      height:500px ; 
+      position:relative;
+      background-color:transparent;
+      border:0px solid gray;
+      padding:35px 35px;}
+
+       #greetings1
+         {flex:3;
+         display:flex;
+         flex-wrap:wrap;
+         flex-direction:column; align-content:center; justify-content:end;
+         border:0px solid gold;
+         padding:15px 15px;}
+
+         #greetings1a
+           {font-weight:400; font-size:70px;
+           font-family:'UNECTRIAL-Regular','Khalifa';
+           color:white;line-height:50px;
+           text-wrap:wrap;text-align:center;}
+
+           #brand-name2
+           {color:white;
+           text-wrap:wrap;
+           font-size:45px;
+           font-weight:400;
+           font-family:'GUNECTRIAL-Regular';
+           }
+           
+         #greetings1ab
+           {font-size:25px;
+           font-family:'KFGQPC Uthman Taha Naskh Regular','Arial Narrow', Arial, sans-serif;
+           color:white;
+           text-transform: capitalize; text-align:center;
+           text-wrap:wrap; margin-top:10px; margin-bottom:15px;}
+    
+           #reserve-button
+           {background-color:orangered;
+           font-weight:bolder; font-size:13px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color:white;
+           height:30px; width:100px;
+           border:none;
+           border-radius:15px;
+           padding:3px 3px; align-self:center;
+           position:relative; left:4px; margin-top:10px;
+           transition-duration:1s;}
+
+           
+           #reserve-button:hover
+           {cursor:pointer;
+           background-color:gray;
+           transition-duration:1s;
+           transform:translateX(10px);
+           box-shadow:0px 3px 7px rgb(7, 4, 4) inset;}
+
+           #reserve-button:active
+           {cursor:pointer;
+           background-color:red;
+           transition-duration:1;}
+
+
+       #bg-change
+         {flex:1;
+         display:flex;
+         height:max-content;
+         flex-direction:row; align-content:center; justify-content:center;}
+
+           #bg-change-button
+           {background-color:white;
+           height:15px; width:15px;
+           border:none;
+           border-radius:8px; margin-right:7px;
+           position:relative; top:50px;
+           transition-duration:1s;}
+
+            #bg-change-button:hover
+            {cursor:pointer;
+            background-color:gold;     
+            transition-duration:1s;
+            transform:scale(150%);}
+
+            #bg-change-button:active
+            {cursor:pointer;
+            background-color:red;     
+            transition-duration:1s;
+            transform:scale(150%);}
+
+
+
+/*****************Slide Section***********************/
+
+
+
+#slide-section
+ {/*background-color:burlywood;*/
+  position:relative;
+  padding:15px 15px;
+  height:100%; margin-bottom:20px;}
+
+
+ #wrapper-box
+  { height:300px; width:290px;
+    border:0px solid black;
+    padding:5px 0px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    position:relative; left:50%; 
+    transform:translateX(-50%);
+    /*box-shadow: 0px 0px 9px 2px rgba(66, 61, 61, 0.7);*/
+    overflow:hidden;
+  }
+
+  #wrapper1
+    {display:grid;
+    grid-template-columns:repeat(5, 100%);
+    height:100%; width:100%;
+    animation: toSlide 10s ease-in-out infinite alternate;
+
+  }
+
+   #img-slider-1
+   {  background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural drink logo 1a.png");
+    background-position:center center; background-size:cover;
+    background-repeat:no-repeat;
+   }
+
+   #img-slider-2
+   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural yougurt drink flyer 1.png");
+    background-position:center center; background-size:230px;
+    background-repeat:no-repeat;
+   }
+
+   #img-slider-3
+   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural yougurt drink 2.png");
+    background-position:center center; background-size:200px;
+    background-repeat:no-repeat;
+   }
+
+   #img-slider-4
+   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural tiger drink flyer 1.png");
+    background-position:center; background-size:230px;
+    background-repeat:no-repeat;
+   }
+
+   #img-slider-5
+   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural zobo drink flyer 1.png");
+    background-position:center; background-size:300px;
+    background-repeat:no-repeat;
+   }
+
+
+
+
+   .btn-box
+     {position:absolute; left:50%; bottom:2%;
+      transform:translateX(-50%);}
+
+   .Btn
+     {display:inline-block;
+     background-color:blue;
+     height:10px ; width:10px; border-radius:10px; border:none;
+     margin:5px 5px ;
+   }
+
+   .Btn:hover
+     {box-shadow:0px 0px 7px 4px rgba(0, 255, 255, 0.6);}
+
+
+ @keyframes toSlide
+ {0%{transform: translateX(0%);}
+  10%{transform: translateX(-100%);}
+  20%{transform: translateX(-100%);}
+  30%{transform: translateX(-200%);}
+  40%{transform: translateX(-200%);}
+  50%{transform: translateX(-200%);}
+  60%{transform: translateX(-300%);}
+  70%{transform: translateX(-300%);}
+  80%{transform: translateX(-300%);}
+  90%{transform: translateX(-400%);}
+  100%{transform: translateX(-400%);}
+ }
+
+
+
+/****************All Menu Section*********************/
+
+
+
+
+ #all-menu-section
+ {display:flex;
+  flex-direction:column; align-content:center; justify-content:center;
+  position:relative;left:0px; right:0px;
+  padding:7px 3px 7px 3px;
+  height:max-content;
+  order:2px solid gray;
+  margin-bottom:20px;}
+
+
+   #menu-heading-box
+   {flex:1;
+   display:flex;
+   align-content:center; justify-content:center;
+   order:2px solid green;
+   padding:5px 5px;
+   margin-left:10px; margin-right:10px;}
+
+
+   #menu-heading
+   {font-weight:400; font-size:70px;
+   font-family:'Khalifa';
+   color:orangered;
+   text-wrap:wrap;
+   transition:0.7s;}
+
+     #menu-heading:hover
+     {cursor:pointer;
+     transition:0.7s;
+     transform:scale(125%);}
+
+
+
+   #menu-choice-container
+   {display:flex;
+    flex-direction:row; flex-wrap:wrap;
+    align-content:center; justify-content:space-around;
+    padding:7px 10px 7px 10px;
+    height:max-content; width:max-content;align-self:center;
+    /*border:2px solid red;*/
+    margin-bottom:20px;margin-left:10px; margin-right:10px;}
+
+     .all-btn, .foods-btn, .drinks-btn,
+     .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+     {font-size:15px; font-weight:normal;
+      font-family:impact;
+      height:30px; width:95px; 
+      border:none;
+      background-color:transparent;
+      padding:3px 3px;
+      margin-right:25px;
+      transition:all 0.5s ease-in-out;}
+
+    #menu-choice-container  button:hover
+     {cursor:pointer;
+      background-color: rgb(170, 166, 166) ;
+      border:2px solid rgb(170, 166, 166);
+      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6) ;
+      border-radius:15px;
+      transition:all 0.5s ease-in-out;
+      transform:translateX(8px);}
+
+       .btn-color
+       {background-color:red;
+       color:white;
+       border-style:solid;
+       border-radius:15px;
+       transition:all 0.5s ease-in-out;
+       cursor:pointer;}
+
+
+
+   
+   #menu-box
+   {flex:3;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   /*column-gap:5px; row-gap:5px;*/
+   align-items:center; justify-items:center;
+   background-color:white;
+   position:relative;left:0px; right:0px;
+   padding:5px 5px;
+   height:max-content;
+   border:1px solid rgb(117, 115, 115); border-radius:10px;
+   box-shadow: 0px 0px 6px rgba(61, 61, 61, 0.8) ;
+   margin-bottom:20px;margin-left:10px; margin-right:10px;}
+
+     .all-menu-items
+     {display:flex;
+      flex-direction:column; 
+      align-content:center; justify-content:space-between;
+      gap:7px;
+      background-color:white;
+      padding:5px 5px 15px 5px;
+      height:max-content;
+      order:2px solid rgb(202, 200, 200);
+      /*box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.6);*/ 
+      margin-bottom:5px;}
+
+       .productsImg
+       {height:300px; width:300px;
+        transition:all 1s ease-in-out;}
+
+       .productsImg:hover
+       {cursor:pointer;
+        /*box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6);*/
+        transition:all 1s ease-in-out;
+        transform:scale(75%);}
+
+       /*.menu-items-details
+       {flex:2;
+        display:flex;
+        flex-direction:column;
+        align-content:center; justify-content:center;
+        margin-bottom:3px; 
+        padding:5px 5px;
+        order:2px solid gray;}*/
+
+        .productsName
+         {font-size:15px; font-weight:bolder;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color:black;text-align:center;
+         text-wrap:wrap;
+         overflow:hidden; white-space:wrap; text-overflow:ellipsis;}
+
+         .productsPricing
+         {font-size:15px; font-weight:bold;
+         font-family:Arial, Helvetica, sans-serif;
+         color:red; text-align:center;
+         text-wrap:wrap;}
+
+         .quantity
+         {display:flex;
+          align-content:center; justify-content:center;}
+
+           .quantity-select
+           {font-size:17px; font-weight:normal;
+           font-family:Arial, Helvetica, sans-serif;
+           text-align:center;
+           border:2px solid gray;
+           border-radius:2px;}
+
+         .added
+         {font-size:15px; font-weight:bold;
+         font-family:Arial, Helvetica, sans-serif;
+         color:green; text-align:center;
+         text-wrap:wrap; opacity:0;
+         transition:all 0.7s ease-in-out;}
+
+           .added-opacity
+           {opacity:1; transition:all 0.7s ease-in-out;}
+
+         #check-icon
+           {font-size:15px; color:green;
+           transition:all 0.7s ease-in-out;}
+
+         .add-to-cart
+         {font-size:15px; font-weight:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          height:35px; width:105px; 
+          border:none;align-self:center;margin-top:5px;
+          border-radius:100px;
+          background-color:orangered;
+          padding:3px 3px;
+          transition:all 0.5s ease-in-out;}
+    
+         .add-to-cart:hover
+         {cursor:pointer;
+          box-shadow: inset -0px -3px 7px rgba(0, 0, 0, 0.6);
+          transition:all 0.5s ease-in-out;
+          transform:scale(120%);}
+
+          
+
+
+
+
+/****************About Section*********************/
+
+
+
+
+ #about-section
+ {display:flex;
+ flex-direction:column; align-content:center; justify-content:space-around;
+ gap:10px;
+ position:relative;left:0px; right:0px;
+ padding:15px 15px;
+ height:max-content;
+ background-color:rgb(1, 1, 22);}
+
+
+  #about-us-box
+   {flex:1;
+    display:flex;
+    align-content:center; justify-content:center;
+    order:2px solid white;}
+
+ 
+     #about-us
+     {font-weight:400; font-size:70px;
+     font-family:'Khalifa';
+     color:orangered;
+     text-wrap:wrap;
+     margin-bottom:5px;
+     transition:all 0.7s ease-in-out;}
+
+     #about-us:hover
+     {cursor:pointer;
+     transition:all 0.7s ease-in-out;
+     transform:translateX(8px);}
+ 
+ 
+  #about-box
+   {flex:3;
+   display:flex;
+   flex-direction:row; align-content:center; justify-content:center;
+   gap:10px;
+   position:relative;left:0px; right:0px;
+   padding:15px 15px;
+   height:max-content;
+   order:2px solid white;
+   margin-bottom:20px;}
+
+
+
+    #profile-pix-box
+     {flex:1;
+     display:flex;
+     flex-direction:row;
+     align-content:center; justify-content:space-around;
+     height:max-content;
+     padding:5px 5px;
+     position:relative;
+     order:2px solid gold;}
+
+      #profilePix
+       {height:350px; width:350px;
+        position:relative;
+        transition:all 0.7s ease-in-out;}
+
+       #profilePix:hover
+       {cursor:pointer;
+       transition:all 0.7s ease-in-out;
+       transform:scale(120%);}
+
+
+
+    #about-me-box
+     {flex:1;
+     display:flex;
+     flex-direction:row;
+     align-content:center; justify-content:center;
+     height:max-content;
+     padding:10px 10px;
+     position:relative; top:45px;
+     order:2px solid gold;}
+
+
+      #details-about-me
+       {font-weight:normal; font-size:17px;
+       font-family:'KFGQPC Uthman Taha Naskh Regular';
+       color:white;
+       text-wrap:wrap;
+       margin-bottom:10px;}
+
+
+
+
+/*****************CONTACT SECTION******************/
+
+ #contact-section
+ {display:flex;
+ flex-direction:column;
+ align-content:center; justify-content:space-around;
+ gap:10px;
+ position:relative;left:0px; right:0px;
+ padding:15px 15px;
+ height:max-content;
+ background-color:rgb(1, 1, 22);}
+
+
+
+ #contact-details-box
+ {display:flex;
+ flex-direction:row;
+ align-content:center; justify-content:space-around;
+ gap:10px;
+ position:relative;
+ padding:10px 10px;
+ height:max-content;
+ order:2px solid gold;}
+
+  #contact-box
+   {flex:1;
+   display:flex;
+   flex-direction:column;
+   align-content:center; justify-content:space-around;gap:5px;
+   align-items:center;
+   height:max-content;
+   padding:5px 5px;
+   position:relative;
+   order:2px solid gold;}
+
+     #contact-box h1
+     {font-weight:400; font-size:35px;
+     font-family:'ial Narrow', Arial, sans-serif;
+     color:burlywood;
+     margin-bottom:3px;}
+
+     #contact-box i
+     {color:white;
+      font-size:12px;}
+
+     #contact-box p
+     {color:white;
+     font-size:15px; word-spacing:3px;
+     font-family: Arial, sans-serif;margin-bottom:3px;}
+
+
+
+   #brand-logo-box
+   {flex:1;
+   display:flex;
+   flex-direction:column;
+   align-content:center; justify-content:space-around;align-items:center;
+   height:max-content;
+   padding:5px 5px;
+   position:relative;
+   order:2px solid gold;}
+   
+    #brand-logo
+     {height:110px; width:110px;
+     background:none;margin-right:20px;
+     transition:all 0.7s ease-in-out ;}
+
+       #brand-logo:hover
+       {cursor:pointer;
+        transform:scale(135%);
+        transition:all 0.7s ease-in-out;
+       }
+
+
+   #working-hours-box
+   {flex:1;
+   display:flex;
+   flex-direction:column;
+   align-content:center; justify-content:space-around; gap:5px;
+   align-items:center;
+   height:max-content;
+   padding:5px 5px;
+   position:relative;
+   order:2px solid gold;}
+
+    #working-hours-box h1
+     {font-weight:400; font-size:35px;
+     font-family:Arial, sans-serif;
+     color:burlywood;
+     margin-bottom:3px;}
+
+     #working-hours-box  p
+     {color:white;
+     font-size:15px;
+     font-family:'ial Narrow', Arial, sans-serif;}
+
+
+ .social-media-handle
+ {display:flex;
+ flex-direction:row;
+ align-content:center; justify-content:center;
+ position:relative;
+ padding:10px 10px;
+ height:max-content;
+ order:2px solid gold;}
+
+  .social-media-handle a
+   {text-decoration:none; margin-right:15px;
+    transition:all 0.7s ease-in-out;}
+
+   #social-media-icons
+   {font-size:17px; color:gold;}
+
+   .social-media-handle a:hover
+   {transition:all 0.7s ease-in-out;
+    transform:translateY(-7px);}
+
+
+ 
+ #footer-section
+ {display:flex;
+ flex-direction:row;
+ align-content:center; justify-content:center;
+ position:relative;left:0px; right:0px;
+ padding:10px 10px;
+ height:max-content;
+ background-color:black;}
+
+  .footer-box
+   {position:relative;
+   padding:5px 5px;
+   height:max-content;
+   order:2px solid white;}
+    
+   .footer-box p
+     {color:white;
+      font-size:15px;
+      font-family:Arial, sans-serif;
+     }
+   
+
+
+     

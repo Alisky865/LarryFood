@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ire-foods copy2</title>
+  <link rel="stylesheet" type="text/css"  href="/My Codes/My Codes001/New Designs Codes/CSS/ire01a copy 2.css">
+
+  <link rel="stylesheet" type="text/css"  href="/My Codes/My Codes001/New Designs Codes/CSS/cart.css">
+  
+  <link rel="stylesheet" type="text/css"  href="/My Codes/My Codes001/New Designs Codes/CSS/larry-responsive.css">
+
+  <link rel="stylesheet" type="text/css"  href="/My Codes/My Codes001/New Designs Codes/CSS/My Fonts.css">
+
+  <link rel="stylesheet" href="/My Codes/My Codes001/New Designs Codes/CSS/font-awesome/css/all.css">
+
+</head>
+
+
+<body>
+  <header id="header">
+
+    <nav id="nav-box1">
+     
+       <button id="side-bar-button" onclick="openMenu()">
+         <i class="fa fa-bars" id="side-bar-icon"></i>
+       </button>
+
+     <img id="brand-pix" src="/My Codes/My Codes001/New Designs Codes/Design Images/larry's-foods3.png" alt="Brand Logo Should Be Here">
+
+     <h id="brand-name">
+        Larry's Foods 
+     </h>
+
+     <div id="sidebar-cart">
+      <button id="sidebar-cart-button">
+       <i class="fa-solid fa-cart-shopping" id="sidebar-cart-icon"></i>
+      </button>
+      <div id="sidebar-item-number-box" class="cartQuantityCounts">
+        0
+      </div>
+    </div>
+    </nav>
+
+
+   <nav id="nav-box2">
+     <ul id="navbar-ul">
+       <li 1d="navbar-ul-li">
+        <a href="ire01a copy 2.html" class="navbar-a nav-link" >
+          Home  
+          <i class="fa fa-home" id="navbar-icons"></i></a>
+       </li>
+
+       <li  1d="navbar-ul-li">
+        <a href="#all-menu-section" class="navbar-a nav-link">
+          Menu  
+          <i class="fa fa-bars" id="navbar-icons"></i></a>
+       </li>
+
+       <li 1d="navbar-ul-li">
+        <a href="ire01a copy 2.html" class="navbar-a nav-link">
+          About  
+          <i class="fa fa-user" id="navbar-icons"></i></a>
+       </li>
+
+       <li 1d="navbar-ul-li">
+        <a href="ire01a copy 2.html" class="navbar-a nav-link">
+          Contact  
+          <i class="fa fa-phone" id="navbar-icons"></i></a>
+       </li>
+     </ul>
+   </nav>
+
+  
+
+   <nav id="nav-box3">
+     <div id="navbar-cart">
+       <a href="cart.html">
+         <button id="cart-button">
+           <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+         </button>
+       </a>
+       <div id="item-number-box" class="cartQuantityCounts">
+         0
+       </div>
+     </div>
+
+     <div id="navbar-input-box">
+       <input id="search-input" type="text" placeholder="search">
+       <button id="search-button">
+        <i class="fa fa-search" id="search-icon" type="submit"></i>
+       </button>
+     </div>
+
+     <!---<div id="navbar-order-box">
+       <button id="order-button" type="submit">
+        Order Online
+       </button>
+     </div>---->
+    </nav>
+  </header>
+
+
+
+ <!-----side-bar-container---->
+
+  <div id="side-bar-container">
+
+    <div id="close-container">
+      <button id="close-btn" onclick="closeBtn()">X</button>
+    </div>
+
+    <ul id="sidebar-ul">
+      <li 1d="sidebar-ul-li">
+        <a href="ire01a copy 2.html" id="sidebar-a">
+        <i class="fa fa-home" id="sidebar-icons"></i> Home</a>
+      </li>
+
+      <li  1d="sidebar-ul-li">
+        <a href="ire01a copy 2.html" id="sidebar-a">
+        <i class="fa fa-bars" id="sidebar-icons3"></i> Menu</a>
+      </li>
+
+      <li 1d="sidebar-ul-li">
+        <a href="ire01a copy 2.html" id="sidebar-a">
+        <i class="fa fa-user" id="sidebar-icons3"></i> About</a>
+      </li>
+
+      <li 1d="sidebar-ul-li">
+        <a href="ire01a copy 2.html" id="sidebar-a">
+        <i class="fa fa-phone" id="sidebar-icons2"></i> Contact</a>
+      </li>
+    </ul>
+      
+    <div id="sidebar-search-box">
+      <input id="sidebar-search-input" type="text" placeholder="search">
+      <button id="sidebar-search-button">
+       <i class="fa fa-search" id="sidebar-search-icon" type="submit"></i>
+      </button>
+    </div>
+
+    <button id="sidebar-order-button" type="submit">
+      Order Online
+    </button>
+
+  </div>
+      
+
+
+ <!------------MID BOX---------------->
+
+ <section id="mid-box"> 
+   <div id="welcome-box1">
+     <div id="greetings1">
+       <h id="greetings1a">
+         Welcome To<br> <span id="brand-name2">Larry's Foods</span>
+       </h>
+       
+       <h id="greetings1ab"> with expert in various cuisines and varities of dishes both continentally and inter-continentally based,
+         our aims are to give<br>our customers an appetizing feel and an amazingly satisfying taste on their buds
+         to help them have a wonderful time<br>while savouring any of our dishes...
+       </h>
+
+       <button id="reserve-button">
+         Reservation
+       </button>
+     </div>
+
+     <div id="bg-change">
+       <button id="bg-change-button" onclick="bgChange('bg1')"></button>
+       <button id="bg-change-button" onclick="bgChange('bg2')"></button>
+       <button id="bg-change-button" onclick="bgChange('bg3')"></button>
+     </div>
+   </div>
+ </section>
+
+
+ <section id="cart-section">
+   <div id="cart-box">
+     <div id="details-box">
+        <div>Products</div>
+        <div>Price</div>
+        <div>Quantity</div>
+        <div>Total</div>
+     </div>
+
+     <div class="cart-container">
+        
+     </div>
+   </div>
+
+
+   <div id="summary-box">
+     <div id="summary-heading">
+       Order Summary
+     </div>
+
+     <div id="items-summary">
+       <div id="items-count"></div>
+       <div class="amount js-total-amount1"></div>
+
+       <div>Shipping & Handling :</div>
+       <div class="amount js-shipping"></div>
+
+       <div>Total Before Tax :</div>
+       <div class="amount js-before-tax"></div>
+
+       <div class="estimated-tax js-estimated-tax"></div>
+       <div class="amount js-estimated-tax-amount"></div>
+     </div>
+
+     <div id="order-total">
+      <div>Order Total :</div>
+      <div class="order-amount js-order-amount"></div>      
+     </div>
+
+     <div class="to-check-out">
+       <button class="proceed">
+         Proceed To Checkout
+       </button>
+     </div>
+   </div>
+
+ </section>
+
+
+
+ 
+
+
+ <!---------CONTACT SECTION---------->
+
+ <section id="contact-section">
+
+   <div id="contact-details-box">
+     <div id="contact-box">
+       <h1>Contact us</h1>
+       <p> <i class="fa fa-map-marker"></i> Ogun State, Nigeria </p>
+       <p> <i class="fa fa-phone"></i> +234 810 686 6863 </p>
+       <p> <i class="fa fa-envelope"></i> larryfoods@gmail.com </p>
+     </div>
+
+     <div id="brand-logo-box">
+       <img id="brand-logo" src="/My Codes/My Codes001/New Designs Codes/Design Images/larry's-foods3.png" alt="Brand Logo Should Be Here">
+     </div>
+
+     <div id="working-hours-box">
+       <h1>Opening Hours</h1>
+       <p> Everyday</p>
+       <p> 10:00am - 10:00pm</p>
+     </div>
+   </div>
+
+   <div class="social-media-handle">
+     <a href="#">
+       <i class="fab fa-facebook" id="social-media-icons"></i>
+     </a>
+
+     <a href="#">
+       <i class="fab fa-instagram" id="social-media-icons"></i>
+     </a>
+
+     <a href="#">
+       <i class="fab fa-twitter" id="social-media-icons"></i>
+     </a>
+
+     <a href="#">
+       <i class="fab fa-linkedin" id="social-media-icons"></i>
+     </a>
+   </div>
+
+ </section>
+
+ <section id="footer-section">
+   <div class="footer-box">
+    <p>&copy 2024 All Rights Reserved By Larry's Foods</p>
+   </div>
+
+ </section>
+
+
+
+ <script src="\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\ire product.js"></script>
+ <script src="\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\cart.js"></script>
+ <script src="\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\product logic.js"></script>
+ <script src="\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\ire01a.js"></script>
+</body>
+</html>

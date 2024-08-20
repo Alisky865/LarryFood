@@ -1,0 +1,858 @@
+
+
+ @media(max-width:1115px)
+ {#greetings1ab
+  {font-size:20px; margin-top:12px; margin-bottom:12px;text-align:center;}
+
+  #brand-name2
+  {font-size:55px;
+  font-weight:400;}
+
+  #greetings1a
+  {font-weight:400; font-size:65px;
+  line-height:60px;}
+
+ }
+
+ @media(max-width:1100px)
+ {#menu-box
+  {flex:3;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:2px;
+  align-items:center; justify-items:center;}
+
+  #navbar-icons
+  {font-size:13px;}
+
+  .navbar-a
+  {font-size:13px;}
+
+ }
+
+
+ @media(max-width:1050px)
+ {#cart-section
+  {display:grid;
+   grid-template-columns:3fr;
+   column-gap:15px;
+   align-items:center; justify-items:center;}
+
+   #cart-box
+   {width:700px;}
+
+ }
+
+ 
+
+ @media(max-width:1023px)
+ {#greetings1ab
+  {font-size:19px; margin-top:12px; margin-bottom:12px;text-align:center;}
+ }
+
+
+
+ @media(max-width:990px)
+ {#nav-box2, #nav-box3 ,#brand-name
+  {transition:1s;
+  display:none;}
+
+  #brand-name2
+  {font-size:35px;}
+
+  #brand-pix
+  {height:50px; width:50px;}
+
+  #side-bar-button
+  {transition:2s;
+  display:block;}
+
+  #sidebar-cart
+  {transition:2s;
+  display:flex;}
+
+  #nav-box1
+  {display:flex;
+  height:max-content;
+  flex-direction:row;align-content:center;  justify-content:space-between;}
+
+  #about-box
+  {display:flex;
+  flex-direction:row;
+  align-content:center; justify-content:center;}
+
+  #about-me-box
+  {position:relative;top:33px;}
+
+  #details-about-me
+  {font-size:15px;}
+
+
+
+
+
+ }
+
+
+ @media(max-width:977px)
+ {#greetings1ab
+  {font-size:18px; margin-top:12px; margin-bottom:12px;text-align:center;}
+ }
+
+ @media(max-width:970px)
+ {#menu-box
+  {flex:3;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:2px;
+  align-items:center; justify-items:center;}
+
+  .productsImg
+  {height:250px; width:250px;
+   transition:all 1s ease-in-out;}
+
+ }
+
+
+
+
+ @media(max-width:931px)
+ {#greetings1ab
+  {font-size:17px; margin-top:10px; margin-bottom:10px;text-align:center;}
+ }
+
+ @media(max-width:886px)
+ {#greetings1ab
+  {font-size:16px; margin-top:10px; margin-bottom:10px;text-align:center;}
+ }
+
+
+ @media(max-width:857px)
+ {#greetings1ab
+  {font-size:15px; margin-top:12px; margin-bottom:12px;text-align:center;}
+
+  .btn-box
+  {position:absolute; left:50%; bottom:2%;  
+    transform:translateX(-50%);}
+
+
+  #menu-choice-container
+  {display:flex;
+   flex-direction:column; flex-wrap:wrap;
+   align-content:center; justify-content:center;
+   padding:3px 0px 3px 0px;
+   height:max-content; width:max-content;align-self:center;
+   margin-bottom:10px;margin-left:2px; margin-right:2px;
+   position:relative;}
+
+   #btn-first-box
+   {display:flex;
+   flex-direction:row;
+   align-content:center; justify-content:center;}
+
+   #btn-second-box
+   {display:flex;
+   flex-direction:row;
+   align-content:center; justify-content:center;}
+
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+   {font-size:18px;
+   height:35px; width:105px;
+   margin-bottom:4px;}
+ }
+
+
+ @media(max-width:840px)
+ { #greetings1ab
+   {font-size:15px; margin-top:10px; margin-bottom:10px;text-align:center;}
+
+   #wrapper-box
+   {position:relative; left:50%; 
+    transform:translateX(-50%);}
+
+   .btn-box
+   {position:absolute; left:50%; bottom:2%;  
+    transform:translateX(-50%);}
+
+    #about-me-box
+    {position:relative;top:17px;}
+  
+  }
+
+
+
+ @media(max-width:830px)
+ { #menu-box
+   {flex:3;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr;
+   column-gap:2px;
+   align-items:center; justify-items:center;}
+
+   .productsImg
+   {height:230px; width:230px;
+    transition:all 1s ease-in-out;}
+
+   #profilePix
+   {height:330px; width:330px;
+    position:relative;}
+
+    #about-me-box
+    {position:relative;top:11px;}
+
+    #details-about-me
+    {font-size:15px;}
+
+  }
+
+  @media(max-width:806px)
+   {#contact-box h1
+    {font-size:25px;}
+
+    #contact-box i
+    {font-size:10px;}
+
+    #contact-box p
+    {font-size:12px;}
+
+    #brand-logo
+    {height:100px; width:100px;}
+
+    #working-hours-box h1
+    {font-size:25px;}
+
+    #working-hours-box  p
+    {font-size:12px;}
+
+   }
+
+ 
+
+ @media(max-width:800px)
+ { #greetings1ab
+   {font-size:15px; margin-top:5px; 
+    margin-bottom:7px;text-align:center;}
+
+  }
+
+
+ @media(max-width:794px)
+ {#greetings1ab
+   {font-size:14px;text-align:center;
+    margin-top:8px; margin-bottom:8px;}  
+
+    
+   #profilePix
+   {height:315px; width:315px;
+   position:relative;}
+ 
+   #about-me-box
+   {position:relative;top:13px;}
+ 
+   #details-about-me
+   {font-size:14px;}
+
+
+ }
+
+ @media(max-width:770px)
+ {#cart-box
+   {width:670px;}
+
+ }
+
+
+ @media(max-width:750px)
+ {#menu-box
+   {flex:3;
+   display:grid;
+   grid-template-columns:1fr 1fr;
+   column-gap:2px;
+   align-items:center; justify-items:center;}
+
+   .productsImg
+   {height:250px; width:250px;
+   transition:all 1s ease-in-out;}
+  
+  
+   #profilePix
+   {height:315px; width:315px;
+   position:relative;}
+ 
+   #about-me-box
+   {position:relative;top:11px;}
+ 
+   #details-about-me
+   {font-size:13px;}
+ }
+
+
+
+ @media(max-width:732px)
+  {#greetings1ab
+   {font-size:13px; margin-top:8px; margin-bottom:8px;
+    text-align:center;}
+
+   #brand-name2
+   {font-size:35px;}
+
+   #wrapper-box
+   {position:relative; left:50%;  
+    transform:translateX(-50%);}
+
+   #cart-box
+   {width:600px;}
+
+   .cart-products-img
+   {height:50px; width:50px;}
+ 
+  }
+
+  @media(max-width:706px)
+  {#profilePix
+    {height:300px; width:300px;
+    position:relative;}
+  
+    #details-about-me
+    {font-size:17px;}
+
+   #about-box
+   {display:flex;
+   flex-direction:column;
+   align-content:center; justify-content:center;}
+  }
+
+
+
+  @media(max-width:703px)
+  {#greetings1ab
+   {font-size:12px; margin-top:8px; margin-bottom:8px;
+    text-align:center;}
+
+    .all-btn, .foods-btn, .drinks-btn,
+    .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+    {font-size:18px;
+    height:35px; width:105px;
+    margin-bottom:4px;}
+
+  }
+
+
+
+  @media(max-width:678px)
+  {#greetings1ab
+   {font-size:12px; margin-top:5px; margin-bottom:5px; text-align:center;}
+
+   #greetings1{padding:10px 10px;}
+
+  }
+
+  @media(max-width:660px)
+  {#cart-box
+    {width:550px;}
+
+  }
+
+
+  @media(max-width:647px)
+  {#greetings1ab
+   {font-size:11px; margin-top:5px; margin-bottom:5px; text-align:center;}
+
+   #greetings1{padding:10px 10px;}
+
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+   {font-size:18px;
+   height:35px; width:105px;
+   margin-bottom:4px;}
+
+ 
+  }
+
+
+  @media(max-width:630px)
+  {#greetings1ab
+   {font-size:18px; margin-top:5px; margin-bottom:5px;text-align:center;}
+
+   #greetings1{padding:10px 10px; width:450px;}
+
+   #wrapper-box
+   {position:relative; left:50%;  
+    transform:translateX(-50%);}
+
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+   {font-size:18px;
+   height:35px; width:105px;
+   margin-bottom:4px;}
+ 
+  }
+
+
+
+ @media(max-width:615px)
+  {#greetings1ab
+   {font-size:18px; margin-top:5px; margin-bottom:5px;text-align:center;}
+
+   #greetings1{padding:10px 10px; width:450px;}
+
+   #wrapper-box
+   {position:relative; left:50%;  
+    transform:translateX(-50%);}
+
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+   {font-size:18px;
+   height:35px; width:105px;
+   margin-bottom:4px;}
+
+  }
+
+  @media(max-width:605px)
+   {#contact-box h1
+    {font-size:20px;}
+
+    #contact-box i
+    {font-size:8px;}
+
+    #contact-box p
+    {font-size:10px;}
+
+    #brand-logo
+    {height:90px; width:90px;}
+
+    #working-hours-box h1
+    {font-size:20px;}
+
+    #working-hours-box  p
+    {font-size:10px;}
+
+    #cart-box
+    {width:500px;}
+
+   }
+
+
+
+  @media(max-width:565px)
+  {#menu-box
+    {flex:3;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:2px;
+    align-items:center; justify-items:center;}
+ 
+    .productsImg
+    {height:230px; width:230px;
+    transition:all 1s ease-in-out;}
+
+    .all-btn, .foods-btn, .drinks-btn,
+    .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+    {font-size:15px;
+    height:35px; width:105px;
+    margin-bottom:4px;}
+
+    #about-box
+    {display:flex;
+    flex-direction:column;
+    align-content:center; justify-content:center;}
+
+  }
+
+  @media(max-width:560px)
+  {#cart-box
+    {width:450px;}
+
+   #details-box
+    {font-size:10px; }
+ 
+   .cart-products-img
+    {height:50px; width:50px;}
+
+   .products-name
+    {font-size:10px; }
+
+   .price-box
+    {font-size:10px; }
+
+   .plus-Btn, .minus-Btn
+    {font-size:10px; }
+
+   .quantity
+    {font-size:10px; }
+
+   .total
+    {font-size:10px; }
+
+   .delete-Btn
+    {font-size:8px; }
+
+   #summary-box
+    {font-size:10px; }
+
+   #summary-heading
+    {font-size:11px;}
+
+   #items-summary
+    {font-size:8px; }
+
+   #order-total
+    {font-size:11px;}
+
+   .proceed
+    {font-size:13px;} 
+    
+  }
+
+
+  
+ @media(max-width:542px)
+ {#greetings1ab
+  {font-size:18px; margin-top:5px; margin-bottom:5px;text-align:center;}
+
+  #greetings1{padding:10px 10px; width:450px;}
+
+  #wrapper-box
+  {position:relative; left:50%;
+    transform:translateX(-50%);}
+
+ }
+
+
+ @media(max-width:533px)
+ {#menu-choice-container
+  {display:flex;
+   flex-direction:column; flex-wrap:wrap;
+   align-content:center; justify-content:center;
+   padding:3px 0px 3px 0px;
+   height:max-content; width:max-content;align-self:center;
+   margin-bottom:10px;margin-left:2px; margin-right:2px;
+   position:relative;}
+
+     #btn-first-box
+     {display:flex;
+     flex-direction:row;
+     align-content:center; justify-content:center;}
+
+     #btn-second-box
+     {display:flex;
+      flex-direction:row;
+      align-content:center; justify-content:center;}
+
+     .all-btn, .foods-btn, .drinks-btn,
+     .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+     {font-size:15px;
+     height:35px; width:95px;
+     margin-bottom:4px;}
+
+ }
+
+
+
+ @media(max-width:527px)
+ {#greetings1ab
+  {font-size:16px; margin-top:8px; text-align:center;}
+
+  #greetings1{padding:10px 10px; width:270px;}
+
+  
+  #brand-name2
+  {font-size:25px;
+  font-weight:400;}
+
+  #greetings1a
+  {font-weight:400; font-size:35px;
+  line-height:40px;}
+
+  #reserve-button
+  {position:relative; left:4px; margin-top:15px;}
+
+  #wrapper-box
+  {height:300px; width:250px;
+   position:relative; left:50%;
+   transform:translateX(-50%);}
+
+  .img-slider-2
+    {background-size:180px;}
+
+  .img-slider-4
+    {background-size:200px;}
+
+  .img-slider-3
+    {background-size:180px;}
+
+  .btn-box
+    {position:absolute; left:50%; bottom:2%;
+      transform:translateX(-50%);} 
+
+    
+  #menu-choice-container
+  {display:flex;
+   flex-direction:column; flex-wrap:wrap;
+   align-content:center; justify-content:center;
+   padding:3px 0px 3px 0px;
+   height:max-content; width:max-content;align-self:center;
+   margin-bottom:10px;margin-left:2px; margin-right:2px;
+   position:relative;}
+
+    #btn-first-box
+    {display:flex;
+    flex-direction:row;
+    align-content:center; justify-content:center;}
+
+    #btn-second-box
+    {display:flex;
+     flex-direction:row;
+     align-content:center; justify-content:center;}
+
+
+    .all-btn, .foods-btn, .drinks-btn,
+    .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+    {font-size:15px;
+     height:30px; width:85px;
+     margin-bottom:4px;}
+
+
+    #contact-details-box
+    {display:flex;
+    flex-direction:column;
+    align-content:center; justify-content:space-around;
+    }
+ 
+    #contact-box h1
+    {font-size:35px;}
+
+    #contact-box i
+    {font-size:12px;}
+
+    #contact-box p
+    {font-size:15px;}
+
+    #brand-logo
+    {height:105px; width:105px;}
+
+    #working-hours-box h1
+    {font-size:35px;}
+
+    #working-hours-box  p
+    {font-size:15px;}
+
+}
+
+ @media(max-width:520px)
+ {#menu-box
+  {flex:3;
+  display:grid;
+  grid-template-columns:1fr;
+  column-gap:2px;
+  align-items:center; justify-items:center;}
+
+  .productsImg
+  {height:300px; width:300px;
+  transition:all 1s ease-in-out;}
+
+ }
+
+ @media(max-width:510px)
+   {#cart-box
+   {width:400px;}
+
+   .cart-products-img
+    {height:30px; width:30px;}
+  }
+
+
+
+ @media(max-width:460px)
+   {#cart-box
+   {width:380px;}
+  }
+
+ @media(max-width:440px)
+   {
+
+  }
+
+ @media(max-width:435px)
+   {#cart-box
+   {width:360px;}
+  }
+
+  @media(max-width:430px)
+  {#greetings1ab
+   {font-size:16px; margin-top:8px; text-align:center;}
+
+   #greetings1{padding:10px 10px; width:270px;}
+   
+   #brand-name2
+   {font-size:25px;
+   font-weight:400;}
+
+   #greetings1a
+   {font-weight:400; font-size:35px;
+   line-height:40px;}
+
+   #reserve-button
+   {position:relative; left:4px; margin-top:15px;}
+
+ #wrapper-box
+  { height:300px; width:250px;
+    position:relative; left:50%; 
+    transform:translateX(-50%);
+  }
+
+
+   .img-slider-2
+     {background-size:180px;}
+
+   .img-slider-4
+     {background-size:200px;}
+
+   .img-slider-3
+     {background-size:180px;}
+
+   .btn-box
+     {position:absolute; left:50%; bottom:6%;
+      transform:translateX(-50%);}
+
+   #menu-box
+     {flex:3;
+     display:grid;
+     grid-template-columns:1fr;
+     column-gap:5px;
+     align-items:center; justify-items:center;}
+
+     
+   #menu-choice-container
+   {display:flex;
+    flex-direction:column; flex-wrap:wrap;
+    align-content:center; justify-content:center;
+    padding:3px 0px 3px 0px;
+    height:max-content; width:max-content;align-self:center;
+    margin-bottom:10px;margin-left:2px; margin-right:2px;
+    position:relative;}
+
+     #btn-first-box
+     {display:flex;
+     flex-direction:row;
+     align-content:center; justify-content:center;}
+
+     #btn-second-box
+     {display:flex;
+      flex-direction:row;
+      align-content:center; justify-content:center;}
+
+
+     .all-btn, .foods-btn, .drinks-btn,
+     .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+     {font-size:12px;
+      height:30px; width:75px;
+      margin-bottom:4px;}
+
+      #about-box
+      {display:flex;
+      flex-direction:column; align-content:center; justify-content:center;}
+
+      #details-about-me
+      {font-size:14px;}
+ 
+  }
+
+ @media(max-width:420px)
+   {#cart-box
+   {width:330px;}
+  }
+
+
+  @media(max-width:395px){
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+   {font-size:12px;
+   height:27px; width:73px;
+   margin-bottom:4px;}
+
+   
+   #profilePix
+   {height:290px; width:290px;}
+  }
+
+ @media(max-width:390px)
+   {#cart-box
+   {width:300px;}
+  }
+
+
+  
+  @media(max-width:380px)
+  {.all-btn, .foods-btn, .drinks-btn,
+    .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+    {font-size:10px;
+    height:27px; width:65px;
+    margin-bottom:4px;}
+   }
+
+
+
+  @media(max-width:360px)
+   {#greetings1ab
+   {font-size:13px; margin-top:8px; text-align:center;}
+
+   #greetings1{padding:7px 7px; width:250px;}
+
+   
+   #brand-name2
+   {font-size:25px;
+   font-weight:400;}
+
+   #greetings1a
+   {font-weight:400; font-size:35px;
+   line-height:40px;}
+
+   #reserve-button
+   {position:relative; left:4px; margin-top:15px;}
+
+   #wrapper-box
+   {height:250px; width:250px;
+    position:relative; left:50%;
+    transform:translateX(-50%);}
+
+   .img-slider-2, .img-slider-4
+     {background-size:180px;}
+
+   .img-slider-4
+     {background-size:200px;}
+
+   .img-slider-3
+     {background-size:180px;}
+
+   .btn-box
+     {position:absolute; left:50%; bottom:2%;
+      transform:translateX(-50%);}
+
+   .all-btn, .foods-btn, .drinks-btn,
+   .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
+    {font-size:8px;
+    height:25px; width:60px;
+    margin-bottom:4px;}
+
+    #profilePix
+    {height:270px; width:270px;}
+
+    .productsImg
+    {height:250px; width:250px;}
+
+ 
+  }
+
+ @media(max-width:355px)
+  {#cart-box
+  {width:290px;}
+ }
+
+
+
+
+  
+
+ 
