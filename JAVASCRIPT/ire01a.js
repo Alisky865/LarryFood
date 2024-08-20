@@ -4,8 +4,8 @@
  function changePreviousBg()
   {const previousBg = document.querySelector('.changed1','.changed2','.changed3');
   if(previousBg)
-  {previousBg.classList.remove('changed1','changed2','changed3');}
- }
+  {previousBg.classList.remove('changed1','changed2','changed3');
+ }};
 
 
  function bgChange(action)
