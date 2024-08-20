@@ -83,29 +83,27 @@
       let total = same.pricing * qtty;
 
       sumTotal += total;
+
+      
+      let tax = 2.5;
+      let shipping = 1500;
+      let beforeTax = shipping + sumTotal;
+      let estimatedTx = (tax/100) * beforeTax;
+      let totalOrder = beforeTax + estimatedTx
+
+      document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
+
+      document.querySelector(".js-before-tax").innerHTML = `N${(beforeTax).toLocaleString()}`;
+
+      document.querySelector(".js-estimated-tax").innerHTML = `Estimated Tax ( ${tax}% ) :`;
+
+      document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
+
+      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
       
     });
     document.querySelector(".js-total-amount1").innerHTML = `N${(sumTotal).toLocaleString()}`;
     
-
-    let tax = 2.5;
-    let shipping = 1500;
-    let beforeTax = shipping + sumTotal;
-    let estimatedTx = (tax/100) * beforeTax;
-    let totalOrder = beforeTax + estimatedTx
-
-    document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
-
-    document.querySelector(".js-before-tax").innerHTML = `N${(beforeTax).toLocaleString()}`;
-
-    document.querySelector(".js-estimated-tax").innerHTML = `Estimated Tax ( ${tax}% ) :`;
-
-    document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
-
-    document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
-
-
-
 
    document.querySelectorAll('.js-delete-Btn').forEach((btn, i)=>
     {btn.addEventListener('click',()=>
