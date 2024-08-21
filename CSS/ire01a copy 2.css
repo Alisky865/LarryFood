@@ -4,7 +4,7 @@
   padding:0px;
  }
 
- 
+
 
  #header
     {z-index:15;
@@ -513,7 +513,7 @@
     {display:flex;
     flex-direction:column; align-content:center; justify-content:center;
     flex-wrap:wrap; flex-shrink:0;flex-grow:0;
-    background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg.png");
+    background-image:url( "/My Codes/larry-repo/larry images/larry bg/bg.png");
     background-position:center; background-repeat:no-repeat;background-size:cover;
     height:100%; 
     position:relative; margin-bottom:20px; margin-left:-6px; margin-right:-6px;
@@ -534,17 +534,17 @@
      100%{opacity:1; transform: scale(1);}}*/
 
     #mid-box.changed1
-    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg01.png");
+    {background-image:url( "/My Codes/larry-repo/larry images/larry bg/bg01.png");
     transition:all 0.7s ease-in-out;
    /* animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed2
-    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg02.png");
+    {background-image:url("/My Codes/larry-repo/larry images/larry bg/bg02.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed3
-    {background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/bg03.png");
+    {background-image:url("/My Codes/larry-repo/larry images/larry bg/bg03.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
@@ -675,31 +675,31 @@
   }
 
    #img-slider-1
-   {  background-image:url( "/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural drink logo 1a.png");
+   {  background-image:url("/My Codes/larry-repo/larry images/larrys natural drink logo 1a.png");
     background-position:center center; background-size:cover;
     background-repeat:no-repeat;
    }
 
    #img-slider-2
-   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural yougurt drink flyer 1.png");
+   {background-image:url("/My Codes/larry-repo/larry images/larrys natural yougurt drink flyer 1.png");
     background-position:center center; background-size:230px;
     background-repeat:no-repeat;
    }
 
    #img-slider-3
-   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural yougurt drink 2.png");
+   {background-image:url("/My Codes/larry-repo/larry images/larrys natural yougurt drink 2.png");
     background-position:center center; background-size:200px;
     background-repeat:no-repeat;
    }
 
    #img-slider-4
-   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural tiger drink flyer 1.png");
+   {background-image:url("/My Codes/larry-repo/larry images/larrys natural tiger drink flyer 1.png");
     background-position:center; background-size:230px;
     background-repeat:no-repeat;
    }
 
    #img-slider-5
-   {background-image:url("/My Codes/My Codes001/New Designs Codes/Design Images/larrys natural zobo drink flyer 1.png");
+   {background-image:url("/My Codes/larry-repo/larry images/larrys natural zobo drink flyer 1.png");
     background-position:center; background-size:300px;
     background-repeat:no-repeat;
    }
