@@ -85,7 +85,7 @@
       sumTotal += total;
 
       
-      let tax = 2.5;
+      /*let tax = 2.5;
       let shipping = 1500;
       let beforeTax = shipping + sumTotal;
       let estimatedTx = (tax/100) * beforeTax;
@@ -99,9 +99,10 @@
 
       document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
 
-      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
+      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;*/
       
     });
+
     document.querySelector(".js-total-amount1").innerHTML = `N${(sumTotal).toLocaleString()}`;
     
 
@@ -111,9 +112,46 @@
       cart.splice(i, 1);
       updateCartQuantity();
       saveToStorage();
+      calcTotal()
       renderCart();
      })
     });
+
+   function calcTotal()
+    {let sumTotal = 0;
+       
+
+
+     cart.forEach((item)=>
+     {let itemId = item.productDetail;
+      let qtty = item.quantity;
+
+      let same = '';
+      let tax = 2.5;
+      let shipping = 1500;
+      let beforeTax = shipping + sumTotal;
+      let estimatedTx = (tax/100) * beforeTax;
+      let totalOrder = beforeTax + estimatedTx
+      allProducts.forEach((product)=>
+      {if(product.id === itemId){same = product}; });
+
+      let total = same.pricing * qtty;
+
+      sumTotal += total;
+
+     
+
+      document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
+
+      document.querySelector(".js-before-tax").innerHTML = `N${(beforeTax).toLocaleString()}`;
+
+      document.querySelector(".js-estimated-tax").innerHTML = `Estimated Tax ( ${tax}% ) :`;
+
+      document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
+
+      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
+      
+    });}
 
 
    const minus = document.querySelectorAll('.js-minus-Btn');
