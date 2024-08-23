@@ -11,11 +11,11 @@
 
   ];
 
-  
   updateCartQuantity();
 
   renderCart();
-  calcTotal()
+  //calcTotal();
+ 
  
  function renderCart()
    { let cartProd = '';
@@ -73,20 +73,20 @@
    
    document.querySelector(".cart-container").innerHTML = cartProd;
 
-    //let sumTotal = 0;
-    function calcTotal()
-    {let sumBox = '';
-      let sumTotal = 0;
-
-     cart.forEach((item)=>
+   //function calcTotal()
+   //{
+   /* let sumTotal = 0;
+    let total = 0;
+    
+    cart.forEach((item)=>
      {let itemId = item.productDetail;
       let qtty = item.quantity;
 
       let same = '';
       allProducts.forEach((product)=>
-      {if(product.id === itemId){same = product}; });
+      {if(product.id === itemId){same = product};
 
-      let total = same.pricing * qtty;
+       total = same.pricing * qtty; });
 
       sumTotal += total;
       
@@ -96,42 +96,7 @@
       let estimatedTx = (tax/100) * beforeTax;
       let totalOrder = beforeTax + estimatedTx;
 
-      sumBox +=`
-
-     <div>
-     <div id="summary-heading">
-       Order Summary
-     </div>
-
-     <div id="items-summary">
-       <div id="items-count"></div>
-       <div class="amount js-total-amount1">N${(sumTotal).toLocaleString()}</div>
-
-       <div>Shipping & Handling :</div>
-       <div class="amount js-shipping">N${(shipping).toLocaleString()}</div>
-
-       <div>Total Before Tax :</div>
-       <div class="amount js-before-tax">N${(beforeTax).toLocaleString()}</div>
-
-       <div class="estimated-tax js-estimated-tax">Estimated Tax ( ${tax}% ) :</div>
-       <div class="amount js-estimated-tax-amount">N${(estimatedTx).toLocaleString()}</div>
-     </div>
-
-     <div id="order-total">
-      <div>Order Total :</div>
-      <div class="order-amount js-order-amount">N${(totalOrder).toLocaleString()}</div>      
-     </div>
-
-     <div class="to-check-out">
-       <button class="proceed">
-         Proceed To Checkout
-       </button>
-     </div>
-     </div>`;
-
-
-
-     /* document.querySelector(".js-total-amount1").innerHTML = `N${(sumTotal).toLocaleString()}`;
+      document.querySelector(".js-total-amount1").innerHTML = `N${(sumTotal).toLocaleString()}`;
 
       document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
 
@@ -141,39 +106,23 @@
 
       document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
 
-      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;*/
+      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
+     });*/
 
-     });
+   //  return;
+    //}
+    //calcTotal();
 
-     document.querySelector("#summary-box").innerHTML = sumBox;
-
-     return calcTotal();
-    }
-    
-    //calcTotal()
-
-
-
-   /*function calcTotal()
-   {document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
-
-   document.querySelector(".js-before-tax").innerHTML = `N${(beforeTax).toLocaleString()}`;
-
-   document.querySelector(".js-estimated-tax").innerHTML = `Estimated Tax ( ${tax}% ) :`;
-
-   document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
-
-   document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
-   return;};*/
-    
 
    document.querySelectorAll('.js-delete-Btn').forEach((btn, i)=>
     {btn.addEventListener('click',()=>
      {//const sameId = btn.dataset.productId;
       cart.splice(i, 1);
+     // calcTotal();
       updateCartQuantity();
       saveToStorage();
       renderCart();
+      
      })
     });
 
@@ -258,5 +207,68 @@
 
   function saveToStorage()
   {localStorage.setItem('cart', JSON.stringify(cart));}
+
+
+
+      
+
+    /* cart.forEach((item)=>
+     {let itemId = item.productDetail;
+      let qtty = item.quantity;
+
+      let sumBox = '';
+      let sumTotal = 0;
+      let total = 0;
+
+      let same = '';
+      allProducts.forEach((product)=>
+      {if(product.id === itemId){same = product};
+
+       total = same.pricing * qtty; });
+
+      sumTotal += total;
+      
+      let tax = 2.5;
+      let shipping = 1500;
+      let beforeTax = shipping + sumTotal;
+      let estimatedTx = (tax/100) * beforeTax;
+      let totalOrder = beforeTax + estimatedTx;
+
+      sumBox +=`
+
+     <div>
+     <div id="summary-heading">
+       Order Summary
+     </div>
+
+     <div id="items-summary">
+       <div id="items-count"></div>
+       <div class="amount js-total-amount1">N${(sumTotal).toLocaleString()}</div>
+
+       <div>Shipping & Handling :</div>
+       <div class="amount js-shipping">N${(shipping).toLocaleString()}</div>
+
+       <div>Total Before Tax :</div>
+       <div class="amount js-before-tax">N${(beforeTax).toLocaleString()}</div>
+
+       <div class="estimated-tax js-estimated-tax">Estimated Tax ( ${tax}% ) :</div>
+       <div class="amount js-estimated-tax-amount">N${(estimatedTx).toLocaleString()}</div>
+     </div>
+
+     <div id="order-total">
+      <div>Order Total :</div>
+      <div class="order-amount js-order-amount">N${(totalOrder).toLocaleString()}</div>      
+     </div>
+
+     <div class="to-check-out">
+       <button class="proceed">
+         Proceed To Checkout
+       </button>
+     </div>
+     </div> `;
+
+     });
+
+     document.querySelector("#summary-box").innerHTML = sumBox;*/
 
 
