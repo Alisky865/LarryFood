@@ -1,6 +1,8 @@
 
-
-let sumTotal = 0;
+//renderCart();
+//calcTotal();
+/*function calcTotal()
+   {let sumTotal = 0;
     let total = 0;
     
     cart.forEach((item)=>
@@ -33,3 +35,8 @@ let sumTotal = 0;
 
       document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
      });
+
+        
+
+    }*/
+    
