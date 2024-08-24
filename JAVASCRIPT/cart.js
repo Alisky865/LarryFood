@@ -226,11 +226,18 @@
            </button>
          </div>
        </div> `;
+
+    
+     
     });
-   
     document.querySelector("#summary-box").innerHTML = sumBox;
 
-  }
+   /* let summaryBox = document.querySelector("#summary-box").innerHTML 
+   if(summaryBox){document.querySelector("#summary-box").innerHTML = summaryBox;}
+    else{document.querySelector("#summary-box").innerHTML = sumBox;}*/
+    
+   // console.log(summaryBox)
+  } 
 
  
 
