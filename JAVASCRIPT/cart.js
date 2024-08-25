@@ -273,11 +273,6 @@
 
   
 
- 
-
-
-
-
   //calcTotal();
 
  /*function calcTotal()
