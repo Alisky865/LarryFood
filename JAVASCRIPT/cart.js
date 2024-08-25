@@ -3,15 +3,11 @@
   let cart = JSON.parse(localStorage.getItem('cart')) ||
  
   [
-   /*{productDetail: "a1",
-   quantity: 2,},
-
-   {productDetail: "a2",
-   quantity: 2,},*/
 
   ];
-  calcTotal();
+  
   updateCartQuantity();
+  calcTotal();
   renderCart(); 
 
  function renderCart()
@@ -70,16 +66,17 @@
    
    document.querySelector(".cart-container").innerHTML = cartProd;
 
+   calcTotal2();
+
 
    document.querySelectorAll('.js-delete-Btn').forEach((btn, i)=>
     {btn.addEventListener('click',()=>
      {//const sameId = btn.dataset.productId;
       cart.splice(i, 1);
       updateCartQuantity();
-      saveToStorage();
-      renderCart();
-      calcTotal(); 
-      
+      saveToStorage(); 
+      calcTotal();
+      renderCart();      
      })
     });
 
@@ -97,8 +94,8 @@
 
          updateCartQuantity();
          saveToStorage();
+         calcTotal();
          renderCart();
-         calcTotal(); 
         })
       }
     );
@@ -115,8 +112,8 @@
 
            updateCartQuantity();
            saveToStorage();
+           calcTotal();
            renderCart();
-           calcTotal(); 
           });
         }
       );
@@ -160,7 +157,7 @@
    document.querySelectorAll('.cartQuantityCounts')
      .forEach((counts)=>{counts.innerHTML = cartQuantity});
 
-   document.querySelector('#items-count').innerHTML = `Items ( ${cartQuantity} ) :`;
+   //document.querySelector('#items-count').innerHTML = `Items ( ${cartQuantity} ) :`;
 
   };
 
@@ -225,19 +222,56 @@
              Proceed To Checkout
            </button>
          </div>
-       </div> `;
-
-    
+       </div> `;    
      
     });
     document.querySelector("#summary-box").innerHTML = sumBox;
-
-   /* let summaryBox = document.querySelector("#summary-box").innerHTML 
-   if(summaryBox){document.querySelector("#summary-box").innerHTML = summaryBox;}
-    else{document.querySelector("#summary-box").innerHTML = sumBox;}*/
-    
-   // console.log(summaryBox)
   } 
+
+
+ function calcTotal2()
+ {let sumBox2 = '';
+  let itemQtty = 0;
+   cart.forEach((items)=>
+   {itemQtty  += items.quantity;});
+    
+    if(itemQtty <= 0)
+    {sumBox2 =`
+      <div>
+        <div id="summary-heading">
+          Order Summary
+        </div>
+
+        <div id="items-summary">
+          <div id="items-count">Items ( 0 ) :</div>
+          <div class="amount js-total-amount1">N0.00</div>
+
+          <div>Shipping & Handling :</div>
+          <div class="amount js-shipping">N0.00</div>
+
+          <div>Total Before Tax :</div>
+          <div class="amount js-before-tax">N0.00</div>
+
+          <div class="estimated-tax js-estimated-tax">Estimated Tax ( 0% ) :</div>
+          <div class="amount js-estimated-tax-amount">N0.00</div>
+        </div>
+
+        <div id="order-total">
+          <div>Order Total :</div>
+          <div class="order-amount js-order-amount">N0.00</div>      
+        </div>
+
+        <div class="to-check-out">
+          <button class="proceed">
+            Proceed To Checkout
+          </button>
+        </div>
+      </div> `;
+      document.querySelector("#summary-box").innerHTML = sumBox2;}  
+    }
+ 
+
+  
 
  
 
