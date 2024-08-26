@@ -100,7 +100,7 @@
       }
     );
 
-
+    
    const plus = document.querySelectorAll('.js-plus-Btn');
      plus.forEach((plusBtn)=>
        {plusBtn.addEventListener('click',()=>
