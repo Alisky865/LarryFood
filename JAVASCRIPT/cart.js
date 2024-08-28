@@ -9,6 +9,7 @@
   updateCartQuantity();
   calcTotal();
   renderCart(); 
+  
 
  function renderCart()
    { let cartProd = '';
