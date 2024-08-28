@@ -23,6 +23,7 @@
 
      #header.scrolled 
      {background-color:rgb(31, 28, 28);
+      border-bottom:2px solid rgb(31, 28, 28);
      transition:all 0.7s ease-in-out;}
 
     #nav-box1
@@ -337,6 +338,8 @@
 
     #side-bar-container.scrolled2
      {background-color:rgb(31, 28, 28);
+      border-bottom:2px solid rgb(31, 28, 28);
+      border-right:2px solid rgb(31, 28, 28);
      transition:all 0.7s ease-in-out;}
 
 
@@ -952,9 +955,7 @@
      transition:all 0.7s ease-in-out;}
 
      #about-us:hover
-     {cursor:pointer;
-     transition:all 0.7s ease-in-out;
-     transform:translateX(8px);}
+     {cursor:pointer;}
  
  
   #about-box
@@ -1121,14 +1122,13 @@
 
   .social-media-handle a
    {text-decoration:none; margin-right:15px;
-    transition:all 0.7s ease-in-out;}
+    transition:all 0.7s ease-in-out;cursor:pointer;}
 
    #social-media-icons
    {font-size:17px; color:gold;}
 
    .social-media-handle a:hover
-   {transition:all 0.7s ease-in-out;
-    transform:translateY(-7px);}
+   {cursor:pointer;}
 
 
  
