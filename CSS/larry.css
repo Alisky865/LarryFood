@@ -534,11 +534,7 @@
      100%{opacity:1; transform: scale(1);}}*/
 
     #mid-box.changed1
-<<<<<<< HEAD
-    {background-image:url( "/larry-images/larry-bg/bg01.png");
-=======
     {background-image:url("/larry-images/larry-bg/bg01.png");
->>>>>>> db71395c3d4eec442e037dc66b8ef64d5e3e5a23
     transition:all 0.7s ease-in-out;
    /* animation:fadeAndScale2 1s forwards;*/}
 
