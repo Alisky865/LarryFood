@@ -219,7 +219,7 @@
          </div>
 
          <div class="to-check-out">
-           <button class="proceed">
+           <button class="proceed js-proceed-btn">
              Proceed To Checkout
            </button>
          </div>

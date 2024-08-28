@@ -97,6 +97,11 @@
     });
 
 
+ const proceedBtn = document.querySelector(".proceed");
+    proceedBtn.addEventListener('click',()=>
+         {proceedBtn.classList.toggle('proceedbg')});
+
+
 
 
 

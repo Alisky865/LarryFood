@@ -513,7 +513,7 @@
     {display:flex;
     flex-direction:column; align-content:center; justify-content:center;
     flex-wrap:wrap; flex-shrink:0;flex-grow:0;
-    background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg.png");
+    background-image:url("/larry-images/larry-bg/bg.png");
     background-position:center; background-repeat:no-repeat;background-size:cover;
     height:100%; 
     position:relative; margin-bottom:20px; margin-left:-6px; margin-right:-6px;
@@ -534,17 +534,17 @@
      100%{opacity:1; transform: scale(1);}}*/
 
     #mid-box.changed1
-    {background-image:url( "/My Codes/larry-repo/larry-images/larry-bg/bg01.png");
+    {background-image:url( "/larry-images/larry-bg/bg01.png");
     transition:all 0.7s ease-in-out;
    /* animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed2
-    {background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg02.png");
+    {background-image:url("/larry-images/larry-bg/bg02.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed3
-    {background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg03.png");
+    {background-image:url("/larry-images/larry-bg/bg03.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
@@ -675,31 +675,31 @@
   }
 
    #img-slider-1
-   {  background-image:url("/My Codes/larry-repo/larry-images/slider1.png");
+   {  background-image:url("/larry-images/slider1.png");
     background-position:center center; background-size:cover;
     background-repeat:no-repeat;
    }
 
    #img-slider-2
-   {background-image:url("/My Codes/larry-repo/larry-images/slider2.png");
+   {background-image:url("/larry-images/slider2.png");
     background-position:center center; background-size:230px;
     background-repeat:no-repeat;
    }
 
    #img-slider-3
-   {background-image:url("/My Codes/larry-repo/larry-images/slider3.png");
+   {background-image:url("/larry-images/slider3.png");
     background-position:center center; background-size:200px;
     background-repeat:no-repeat;
    }
 
    #img-slider-4
-   {background-image:url("/My Codes/larry-repo/larry-images/slider4.png");
+   {background-image:url("/larry-images/slider4.png");
     background-position:center; background-size:230px;
     background-repeat:no-repeat;
    }
 
    #img-slider-5
-   {background-image:url("/My Codes/larry-repo/larry-images/slider5.png");
+   {background-image:url("/larry-images/slider5.png");
     background-position:center; background-size:300px;
     background-repeat:no-repeat;
    }
@@ -707,7 +707,7 @@
 
 
 
-   .btn-box
+   /*.btn-box
      {position:absolute; left:50%; bottom:2%;
       transform:translateX(-50%);}
 
@@ -719,7 +719,7 @@
    }
 
    .Btn:hover
-     {box-shadow:0px 0px 7px 4px rgba(0, 255, 255, 0.6);}
+     {box-shadow:0px 0px 7px 4px rgba(0, 255, 255, 0.6);}*/
 
 
  @keyframes toSlide
@@ -810,10 +810,9 @@
        .btn-color
        {background-color:red;
        color:white;
-       border-style:solid;
-       border-radius:15px;
+       cursor:pointer;
        transition:all 0.5s ease-in-out;
-       cursor:pointer;}
+       }
 
 
 
