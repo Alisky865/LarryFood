@@ -533,17 +533,17 @@
      100%{opacity:1; transform: scale(1);}}*/
 
     #mid-box.changed1
-    {background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg01.png");
+    {background-image:url("/larry-images/larry-bg/bg01.png");
     transition:all 0.7s ease-in-out;
    /* animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed2
-    {background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg02.png");
+    {background-image:url("/larry-images/larry-bg/bg02.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
     #mid-box.changed3
-    {background-image:url("/My Codes/larry-repo/larry-images/larry-bg/bg03.png");
+    {background-image:url("/larry-images/larry-bg/bg03.png");
     transition:all 0.7s ease-in-out;
     /*animation:fadeAndScale2 1s forwards;*/}
 
