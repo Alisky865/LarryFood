@@ -1,42 +1,69 @@
 
-//renderCart();
-//calcTotal();
-/*function calcTotal()
-   {let sumTotal = 0;
-    let total = 0;
-    
-    cart.forEach((item)=>
-     {let itemId = item.productDetail;
-      let qtty = item.quantity;
+/*
+   const food = [
+      {id:"a1",
+      image:"larry-images/01.jpg",
+      name: 'Mini Food Train' ,
+      pricing: 9750  ,},
 
-      let same = '';
-      allProducts.forEach((product)=>
-      {if(product.id === itemId){same = product};
 
-       total = same.pricing * qtty; });
+      {id:"a3",
+      image:"larry-images/06.jpg",
+      name: 'Asorted & Grilled Chicken' ,
+      pricing: 5000 ,},
 
-      sumTotal += total;
+
+      {id:"a5",
+      image:"larry-images/12.jpg",
+      name: 'Mini Jollof Package' ,
+      pricing: 6700 ,},
+
+
+      {id:"a8",
+      image:"larry-images/35.jpg",
+      name: 'Spaghetti, Chicken With Sauce' ,
+      pricing: 3750 ,},
+
+   
+      {id:"a9",
+      image:"larry-images/02.jpg",
+      name: 'Asorted Fried Rice And Turkey' ,
+      pricing: 8500 ,},
+
+
+      {id:"a13",
+      image:"larry-images/13.jpg",
+      name: 'Complete Food Train' ,
+      pricing: 15000 ,},
+
       
-      let tax = 2.5;
-      let shipping = 1500;
-      let beforeTax = shipping + sumTotal;
-      let estimatedTx = (tax/100) * beforeTax;
-      let totalOrder = beforeTax + estimatedTx;
+      {id:"a14",
+      image:"larry-images/14.jpg",
+      name: 'Egusi Soup Package' ,
+      pricing: 7000 ,},
 
-      document.querySelector(".js-total-amount1").innerHTML = `N${(sumTotal).toLocaleString()}`;
 
-      document.querySelector(".js-shipping").innerHTML = `N${(shipping).toLocaleString()}`;
+      {id:"a18",
+      image:"larry-images/18.jpg",
+      name: 'Chicken, Potato Fries & Curry' ,
+      pricing: 7500 ,},
 
-      document.querySelector(".js-before-tax").innerHTML = `N${(beforeTax).toLocaleString()}`;
 
-      document.querySelector(".js-estimated-tax").innerHTML = `Estimated Tax ( ${tax}% ) :`;
+      {id:"a20",
+      image:"larry-images/20.jpg",
+      name: 'Rice, Plantain & Peppersoup' ,
+      pricing: 7000 ,},
 
-      document.querySelector(".js-estimated-tax-amount").innerHTML = `N${(estimatedTx).toLocaleString()}`;
+   
+      {id:"a21",
+      image:"larry-images/21.jpg",
+      name: 'Mixed Fries With Spiced Ponmo' ,
+      pricing: 3500 ,},
 
-      document.querySelector(".js-order-amount").innerHTML = `N${(totalOrder).toLocaleString()}`;
-     });
 
-        
+      {id:"a26",
+      image:"larry-images/30.jpg",
+      name: 'Spaghetti ' ,
+      pricing: 1500 ,},
 
-    }*/
-    
+   ]*/
