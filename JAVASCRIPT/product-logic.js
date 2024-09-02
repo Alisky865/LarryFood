@@ -1,7 +1,7 @@
  //import {cart} from '\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\cart.js';
 
  //import {cart} from '\My Codes\My Codes001\New Designs Codes\JAVASCRIPT\ire product.js';*/
- 
+ //initAddToCart()
 
  let productHtml = ""; 
 
@@ -82,7 +82,9 @@
      //document.querySelector("#menu-box").innerHTML = foodHtml; 
 
    document.querySelector('.js-food-btn')
-     .addEventListener('click',()=>{document.querySelector("#menu-box").innerHTML = foodHtml;})
+     .addEventListener('click',()=>{document.querySelector("#menu-box").innerHTML = foodHtml;
+      initAddToCart();
+     })
 
 
 
@@ -105,7 +107,7 @@
      {addedNotification.classList.remove("added-opacity");}, 2000);
   };
 
-
+ function initAddToCart(){
  document.querySelectorAll(".js-add-to-cart")
    .forEach((button)=>
      {button.addEventListener("click",
@@ -124,6 +126,8 @@
         
       });
      });
+  }
+  initAddToCart()
 
 
 
