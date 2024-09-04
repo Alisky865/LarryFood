@@ -81,17 +81,6 @@
      });
      //document.querySelector("#menu-box").innerHTML = foodHtml; 
 
-   document.querySelector('.js-food-btn')
-     .addEventListener('click',()=>{document.querySelector("#menu-box").innerHTML = foodHtml;
-      initAddToCart();
-     })
-
-
-
-
-
-
-
 
 
   let timeoutId ;

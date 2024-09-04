@@ -111,7 +111,8 @@
        height:15px;
        border-radius:100%;
        padding:5px 5px;
-       position:relative; bottom:0px; right:20px;}
+       position:relative; bottom:0px; right:20px;
+       cursor:pointer;}
         
 
 
@@ -231,6 +232,7 @@
          border-radius:100%; justify-content:center;
          padding:5px 5px;
          position:relative; bottom:7px; right:20px;
+         cursor:pointer;
          }
 
 
@@ -788,7 +790,7 @@
     /*border:2px solid red;*/
     margin-bottom:20px;margin-left:10px; margin-right:10px;}
 
-     .all-btn, .foods-btn, .drinks-btn,
+     .foods-btn, .drinks-btn,
      .burger-btn, .pasta-btn, .cakes-btn, .fries-btn
      {font-size:15px; font-weight:normal;
       font-family:impact;
@@ -800,6 +802,33 @@
       margin-right:25px;
       cursor:pointer;
       transition:all 0.5s ease-in-out;}
+
+      .all-btn
+      {font-size:15px; font-weight:normal;
+       font-family:impact; color: white;
+       height:30px; width:95px; 
+       border-style:solid; border-color:transparent;
+       border-radius:15px;
+       background-color:red;
+       padding:3px 3px;
+       margin-right:25px;
+       cursor:pointer;
+       transition:all 0.5s ease-in-out;}
+
+       .all-color
+       {font-size:15px; font-weight:normal;
+        font-family:impact; color:black;
+        height:30px; width:95px; 
+        border-style:solid; border-color:transparent;
+        border-radius:15px;
+        background-color:transparent;
+        padding:3px 3px;
+        margin-right:25px;
+        cursor:pointer;
+        transition:all 0.5s ease-in-out;}
+
+
+
 
     /*#menu-choice-container  button:hover
      {cursor:pointer;

@@ -111,7 +111,8 @@
        height:15px;
        border-radius:100%;
        padding:5px 5px;
-       position:relative; bottom:0px; right:20px;}
+       position:relative; bottom:0px; right:20px;
+       cursor:pointer;}
         
 
 
@@ -230,6 +231,7 @@
          border-radius:100%; justify-content:center;
          padding:5px 5px;
          position:relative; bottom:7px; right:20px;
+         cursor:pointer;
          }
 
 

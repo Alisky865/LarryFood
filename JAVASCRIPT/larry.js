@@ -92,17 +92,46 @@
        if(!btns.classList.contains('btn-color'))
          {turnOffPreviousButton();
          btns.classList.add('btn-color');}
-       else{btns.classList.remove('btn-color');}
-       })
-    });
+       else{btns.classList.remove('btn-color');};
+
+       const allbtn = document.querySelector('.all-btn');
+         if(!allbtn.classList.contains('all-color'))
+         {allbtn.classList.add('all-color')}
+         //else{allbtn.classList.remove('all-color')};
+        })
+    }
+  );
 
 
+ document.querySelector('.js-food-btn')
+   .addEventListener('click',()=>
+   {document.querySelector("#menu-box").innerHTML = foodHtml;
+     initAddToCart();
+    }
+  );
+
+
+ document.querySelector('.all-btn')
+   .addEventListener('click',()=>
+   {document.querySelector("#menu-box").innerHTML = productHtml;
+     initAddToCart();
+     turnOffPreviousButton();
+     const allbtn = document.querySelector('.all-btn');
+     if(allbtn.classList.contains('all-color'))
+     {allbtn.classList.remove('all-color')}
+    }
+  );
+
+
+
+
+  
  const proceedBtn = document.querySelector(".proceed");
     proceedBtn.addEventListener('click',()=>
          {proceedBtn.classList.toggle('proceedbg')});
 
 
-
+  
 
 
 
