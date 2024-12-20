@@ -6,7 +6,7 @@
  let productHtml = ""; 
 
  allProducts.forEach((product)=>{
-  
+   
   productHtml += `
    <div class="all-menu-items">
      <div>
