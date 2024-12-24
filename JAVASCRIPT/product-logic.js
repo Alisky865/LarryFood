@@ -83,15 +83,15 @@
 
 
 
-  let timeoutId ;
+  //let timeoutId ;
  function addedNotification(productId)
-  {//let timeoutId ;
+  {let timeoutId ;
     //To Clear Any Previously SetTimeout & Make The Timer Start All Over Again
 
    clearTimeout(timeoutId);
 
-   /*timeoutId = setTimeout(()=>
-    {addedNotification.classList.remove("added-opacity");}, 2000);*/
+   timeoutId = setTimeout(()=>
+    {addedNotification.classList.remove("added-opacity");}, 2000);
 
     const addedNotification = document.querySelector
    (`.added-${productId}`);
@@ -101,8 +101,8 @@
 
    //clearTimeout(timeoutId);
 
-   timeoutId = setTimeout(()=>
-     {addedNotification.classList.remove("added-opacity");}, 2000);
+   /*timeoutId = setTimeout(()=>
+     {addedNotification.classList.remove("added-opacity");}, 2000);*/
   };
 
  function initAddToCart(){
