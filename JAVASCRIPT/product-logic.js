@@ -88,7 +88,7 @@
   {let timeoutId ;
     //To Clear Any Previously SetTimeout & Make The Timer Start All Over Again
 
-   //clearTimeout(timeoutId);
+   clearTimeout(timeoutId);
 
    /*timeoutId = setTimeout(()=>
     {addedNotification.classList.remove("added-opacity");}, 2000);*/
@@ -99,7 +99,7 @@
 
    //Ought To Be Placed Ahead
 
-   clearTimeout(timeoutId);
+   //clearTimeout(timeoutId);
 
    timeoutId = setTimeout(()=>
      {addedNotification.classList.remove("added-opacity");}, 2000);
