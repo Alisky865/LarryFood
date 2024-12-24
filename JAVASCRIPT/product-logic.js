@@ -91,6 +91,9 @@
 
    clearTimeout(timeoutId);
 
+   timeoutId = setTimeout(()=>
+    {addedNotification.classList.remove("added-opacity");}, 2000);
+
     const addedNotification = document.querySelector
    (`.added-${productId}`);
    addedNotification.classList.add("added-opacity");
@@ -99,8 +102,8 @@
 
    //clearTimeout(timeoutId);
 
-   timeoutId = setTimeout(()=>
-     {addedNotification.classList.remove("added-opacity");}, 2000);
+   /*timeoutId = setTimeout(()=>
+     {addedNotification.classList.remove("added-opacity");}, 2000);*/
   };
 
  function initAddToCart(){
