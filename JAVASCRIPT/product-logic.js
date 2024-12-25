@@ -87,15 +87,33 @@
  function addedNotification(productId)
   {let timeoutId ;
     //To Clear Any Previously SetTimeout & Make The Timer Start All Over Again
+    if(timeoutId)
+      {clearTimeout(timeoutId);
 
-   clearTimeout(timeoutId);
+        const addedNotification = document.querySelector
+        (`.added-${productId}`);
+        addedNotification.classList.add("added-opacity");
 
-   timeoutId = setTimeout(()=>
-    {addedNotification.classList.remove("added-opacity");}, 2000);
+        timeoutId = setTimeout(()=>
+          {addedNotification.classList.remove("added-opacity");}, 2000);
 
-    const addedNotification = document.querySelector
+    }
+    else
+      {const addedNotification = document.querySelector
+        (`.added-${productId}`);
+        addedNotification.classList.add("added-opacity");
+
+        timeoutId = setTimeout(()=>
+          {addedNotification.classList.remove("added-opacity");}, 2000);
+    }
+   
+
+   /*timeoutId = setTimeout(()=>
+    {addedNotification.classList.remove("added-opacity");}, 2000);*/
+
+    /*const addedNotification = document.querySelector
    (`.added-${productId}`);
-   addedNotification.classList.add("added-opacity");
+   addedNotification.classList.add("added-opacity");*/
 
    //Ought To Be Placed Ahead
 
